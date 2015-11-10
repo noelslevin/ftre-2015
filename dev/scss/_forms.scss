@@ -1,0 +1,25 @@
+/* Partial: forms - Form & form element styles */
+
+textarea {
+    resize: none;
+}
+
+.comment-form label {
+    display: block;
+}
+
+.comment-form input:not([type="submit"]), textarea {
+    width: 100%;
+}
+
+.contact-form textarea {
+    width: 100% !important;
+}
+
+@media screen and (min-width: 860px) {
+    
+    .comment-form input:not([type="submit"]) {
+        max-width: 400px;
+    }
+    
+}

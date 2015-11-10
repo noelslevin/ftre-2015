@@ -1,0 +1,30 @@
+/* Partial: helpers - Helper classes for allsorts */
+
+.flex  {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.center{
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.hidden {
+    display: none;
+}
+
+.float-right {
+    float: none;
+    width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    .float-right {
+        float: right;
+        width: auto;
+    }
+}

@@ -1,0 +1,77 @@
+/* Partial: typography - Type styles */
+
+@font-face {
+    font-family: 'Pacifico';
+    src:    url('fonts/pacifico.woff2') format('woff2'),
+            url('fonts/pacifico.woff') format('woff');
+}
+
+@font-face{
+    font-family:"Open Sans";
+    src:    url('fonts/opensans-regular.woff2') format('woff2'),
+            url('fonts/opensans-regular.woff') format('woff');
+}
+
+@font-face{
+    font-family:"Open Sans";
+    src:    url('fonts/opensans-bold.woff2') format('woff2'),
+            url('fonts/opensans-bold.woff') format('woff');
+    font-weight: 700;
+}
+
+@font-face{
+    font-family:"Open Sans";
+    src:    url('fonts/opensans-italic.woff2') format('woff2'),
+            url('fonts/opensans-italic.woff') format('woff');
+    font-style: italic;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #254ec1;
+}
+
+.archive-box h2 a {
+    color: #000;
+}
+
+.archive-box h2 {
+    font-size: 1.6rem;
+}
+
+.right a {
+    color: #fff;
+    font-weight: bold;
+}

@@ -1,0 +1,31 @@
+/* Partial: layout - Layout rules */
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 800px) {
+    
+    .archive-box {
+        width: calc(50% - 7.5px);
+        margin: 5px;
+    }
+    
+    .archive-box:nth-of-type(odd) {
+        margin-left: 0;
+    }
+
+    .archive-box:nth-of-type(even) {
+        margin-right: 0;
+    }
+    
+    .sidebar {
+        flex: 3 1 0%;
+    }
+    
+    .content {
+        flex: 7 1 0%;
+        padding-right: 10px;
+    }
+}

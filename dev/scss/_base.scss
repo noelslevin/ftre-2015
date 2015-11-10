@@ -1,0 +1,25 @@
+/* Module: base - high-level styles. Basically just the html/:root element. */
+
+html {
+    box-sizing: border-box;
+    background-color: lighten($yellow, 10%);
+    max-width: 1275px;
+    margin: 0 auto;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #fff;
+}
+
+@media screen and (min-width: 960px) {
+
+    body {
+        margin: 5px;
+        border: 1px solid #555;
+    }
+    
+}

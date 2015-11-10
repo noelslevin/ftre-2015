@@ -1,0 +1,13 @@
+/* Partial: objects - Abstractions that can't be categorised anywhere else */
+
+img,
+video,
+iframe {
+    display: block;
+    max-width: 100%;
+    margin: 0;
+}
+
+audio {
+    width: 100%;
+}

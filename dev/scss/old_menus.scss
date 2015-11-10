@@ -1,0 +1,91 @@
+/* Module: menus - high-level styles for the built-in navigation menus. */
+
+.menu-primary-menu-container {
+    order: 1;
+}
+
+ul.menu {
+    margin: 0;
+    padding: 0px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style-type: none;
+    text-align: center;
+    font-size: smaller;
+}
+
+.menu-item {
+    width: calc((100% - 20px) / 3);
+    background: #333;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+}
+
+.menu-item + .menu-item {
+    margin-left: 10px;
+}
+
+.menu-item + .menu-item:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+.menu-item li {
+    padding: 0;
+}
+
+.menu-item:hover {
+    background: #222;
+}
+
+.menu-item a {
+    display: block;
+    padding: 5px 0;
+    color: #FFF;
+}
+
+@media screen and (min-width: 860px) {
+    
+    .menu-item {
+        width: calc((100% - 50px) / 6);
+    }
+    
+    .menu-item + .menu-item:nth-child(3n+1) {
+        margin-left: 10px;
+    }
+    
+    .menu-primary-menu-container {
+        order: 0;
+    }
+    
+}
+
+@media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    
+    .menu-item {
+        width: calc(96% / 3);
+    }
+    
+    .menu-item + .menu-item {
+        margin-left: 2%;
+    }
+    
+}
+
+@media screen and (min-width: 860px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    
+    .menu-item {
+        width: calc(96% / 6);
+    }
+    
+    .menu-item + .menu-item {
+        margin-left: calc(4% / 5);
+    }
+    
+    .menu-item + .menu-item:nth-child(3n+1) {
+        margin-left: calc(4% / 5);
+    }
+    
+}

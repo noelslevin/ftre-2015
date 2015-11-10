@@ -1,0 +1,33 @@
+/*!
+Theme Name: FTRE 2015
+Theme URI: http://fromtherookeryend.com
+Author: Noel Slevin
+Author URI: https://slevin.org.uk
+Description: Custom theme for From the Rookery End, based around their monthly podcast
+Version: 0.1
+License: All rights reserved - not for use anywhere else, unless waived in writing by FTRE
+License URI: N/A - not licensed
+*/
+
+/* style.scss - imports all required SCSS files. */
+
+@import "scss/variables";
+@import "scss/normalize";
+@import "scss/wordpress";
+@import "scss/base";
+@import "scss/typography";
+@import "scss/layout";
+@import "scss/header";
+@import "scss/footer";
+@import "scss/menus";
+@import "scss/homepage";
+@import "scss/content";
+@import "scss/objects";
+@import "scss/helpers";
+@import "scss/images";
+@import "scss/tables";
+@import "scss/forms";
+@import "scss/animations";
+
+// Styles are placed here in the testing phase, before moving to their final place
+@import "scss/test";
