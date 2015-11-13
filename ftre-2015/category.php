@@ -16,7 +16,9 @@
 			<?php the_excerpt(); ?>
         </div>
 			<?php endwhile; ?>
-        <?php echo paginate_links(); ?>
+        <div class="paginate">
+            <?php echo paginate_links(); ?>
+        </div>
 		<?php endif; ?>
 	</div>
     
