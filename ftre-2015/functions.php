@@ -1,8 +1,8 @@
 <?php
 
-function getLatestPod($feedURL, $image, $itunes) {
+function getLatestPod($source, $image, $rss, $itunes) {
 
-    $content = file_get_contents($feedURL);
+    $content = file_get_contents($source);
     $bannerimage = get_stylesheet_directory_uri()."/images/".$image;
     $x = new SimpleXmlElement($content);
 	$n = 0;
@@ -11,7 +11,7 @@ function getLatestPod($feedURL, $image, $itunes) {
 		while ($n < 1) {
             $ituneslink = htmlspecialchars($itunes);
 			$podlink = htmlspecialchars($entry->enclosure['url']);
-            $rss = htmlspecialchars($feedURL);
+            $rss = htmlspecialchars($rss);
             $text = htmlspecialchars($entry->description);
             $title = htmlspecialchars($entry->title);
             echo "<div class=\"float-right\">\n";
@@ -122,5 +122,8 @@ function my_scripts_styles() {
 }
 
 add_action( 'wp_enqueue_scripts', 'my_scripts_styles' );
+
+// Allows HTML in author bios
+remove_filter('pre_user_description', 'wp_filter_kses');
 
 ?>

@@ -3,7 +3,7 @@
 <div class="site-content">
     
     <div class="home-page-section">
-	<?php getLatestPod('https://audioboom.com/channels/4225404.rss', 'ftre-premier-league.jpg', 'https://itunes.apple.com/gb/podcast/from-the-rookery-end/id374798846'); ?> 
+	<?php getLatestPod('https://audioboom.com/channels/4225404.rss', 'ftre-premier-league.jpg', 'https://feeds.feedburner.com/rookeryend', 'https://itunes.apple.com/gb/podcast/from-the-rookery-end/id374798846'); ?> 
 	</div>
     
     <div class="home-page-section">
@@ -14,7 +14,7 @@
 	</div>
     
 	<div class="home-page-section">
-		<?php getLatestPod('https://feeds.feedburner.com/ftreshorts', 'ftre-shorts.jpg', 'https://itunes.apple.com/gb/podcast/red-black-shorts-from-rookery/id1030465061'); ?>
+		<?php getLatestPod('https://audioboom.com/channels/1472379.rss', 'ftre-shorts.jpg', 'https://feeds.feedburner.com/rookeryend', 'https://itunes.apple.com/gb/podcast/from-the-rookery-end/id374798846'); ?>
 	</div>
 	
 </div>
