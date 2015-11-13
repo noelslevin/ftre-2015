@@ -42,6 +42,43 @@ a.menu-link {
     display: block;
 }
 
+.site-content {
+    background: #222;
+    color: #fff;
+}
+
+input[type=submit] {
+    color: #fff;
+    background: #000;
+    border: 5px solid yellow;
+    font-weight: bold;
+    padding: 4px;
+}
+
+.archive-box {
+    color: #000;
+}
+
+.paginate {
+    display: block;
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.page-numbers:hover {
+    color: #fff;
+}
+
+form {
+    display: block;
+    width: 100%;
+}
+
+input, textarea {
+    color: #000;
+}
+
 @media screen and (min-width: 800px) {
     .menu-link {
         display: none;
