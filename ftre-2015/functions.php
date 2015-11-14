@@ -118,6 +118,7 @@ remove_action('wp_head', 'wp_generator');
 // Add custom stuff to site head
 add_action('wp_head', 'ftre_head');
 function ftre_head() {
+	echo "<link rel=\"shortcut icon\" href=\"".get_stylesheet_directory_uri()."/images/favicon.ico\" type=\"image/x-icon\" />";
     echo "<link rel=\"apple-touch-icon\" href=\"".get_stylesheet_directory_uri()."/images/apple-touch-icon.png\" />";
 }
 
