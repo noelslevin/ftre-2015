@@ -115,6 +115,12 @@ remove_action( 'wp_print_styles', 'print_emoji_styles' );
 // Remove WordPress information from the site head
 remove_action('wp_head', 'wp_generator');
 
+// Add custom stuff to site head
+add_action('wp_head', 'ftre_head');
+function ftre_head() {
+    echo "<link rel=\"apple-touch-icon\" href=\"".get_stylesheet_directory_uri()."/images/apple-touch-icon.png\" />";
+}
+
 // Load theme Javascript
 function my_scripts_styles() {
     wp_register_script('ftre-scripts', get_template_directory_uri() . '/scripts.js',  '2015-11-10', true );
