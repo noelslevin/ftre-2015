@@ -87,7 +87,7 @@ add_theme_support( 'html5', $args );
 
 function getArtwork() {
     $themedir = get_stylesheet_directory_uri();
-    $dir = '/home/noelinho/websites/ftre.slevin.org.uk/public_html/wp-content/themes/ftre-2015/images/stanley-grouse/';
+    $dir = get_stylesheet_directory() . '/images/stanley-grouse/';
     $publicdir = $themedir."/images/stanley-grouse/";
     $contents = scandir($dir, 1);
     shuffle($contents);
