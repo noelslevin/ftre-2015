@@ -1075,3 +1075,7 @@ input, textarea {
 .podcast-links {
 	padding: 10px;
 }
+
+.spotify {
+	height: 34px;
+}
