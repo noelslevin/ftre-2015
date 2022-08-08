@@ -1067,3 +1067,11 @@ input, textarea {
     display: flex !important;
   }
 }
+
+.inline-svg {
+	display: inline;
+}
+
+.podcast-links {
+	padding: 10px;
+}
