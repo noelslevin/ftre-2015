@@ -12,8 +12,8 @@ function getLatestPod($source, $image, $rss, $itunes) {
             $ituneslink = htmlspecialchars($itunes);
 			$podlink = htmlspecialchars($entry->enclosure['url']);
             $rss = htmlspecialchars($rss);
-            $text = htmlspecialchars($entry->description);
-            $title = htmlspecialchars($entry->title);
+            $text = strip_tags($entry->description, "<p>");
+            $title = strip_tags($entry->title);
             echo "<div class=\"float-right\">\n";
             echo "<img src='$bannerimage' />";
             echo "<audio src='$podlink' controls>\n";
@@ -21,11 +21,6 @@ function getLatestPod($source, $image, $rss, $itunes) {
             echo "</div>\n";
             echo "<h2>$title</h2>\n";
             echo "<p>$text</p>\n";
-            echo "<div class=\"right\">\n";
-            echo "<p><a href=\"$podlink\" download>Download file</a> | ";
-            echo "<a href=\"$ituneslink\">iTunes</a> | ";
-            echo "<a href=\"$rss\">RSS feed</a></p>\n";
-            echo "</div>\n";
 			$n++;
 		}
     }
