@@ -14,6 +14,7 @@
             <h2><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
             <?php the_post_thumbnail( 'large'); ?>
 			<?php the_excerpt(); ?>
+            <?php edit_post_link('Edit', '<p>', '</p>'); ?>
         </div>
 			<?php endwhile; ?>
         <div class="paginate">
